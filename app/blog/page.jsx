@@ -7,7 +7,7 @@ const navItems = [
 
 export default async function Blog() {
   return (
-    <div id="top">
+    <div className="mt-12" id="top">
       <NavBar navItems={navItems} />
       <ThoughtsList />
     </div>

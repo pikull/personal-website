@@ -44,16 +44,17 @@ nav {
 .link-under {
   text-decoration: underline;
   text-underline-offset: 4px;
-  transition:
-    text-underline-offset 0.2s ease;
+  transition:;
 }
 .link-under:hover {
   text-underline-offset: 2px;
 }
 
-.link-fade {
+.link-fade,
+.link-under {
   transition:
-    opacity 0.2s ease;
+    opacity 0.2s ease,
+    text-underline-offset 0.2s ease;
 }
 .link-fade:hover {
   opacity: 0.8;

@@ -14,8 +14,10 @@ export default function Home() {
   return (
     <div>
       <NavBar navItems={navItems} />
-      <div className="full-height" id="home">
-        my name is akshun <br />
+      <div className="text-center full-height" id="home">
+        my name is akshun.<br />
+        i really like computers. i also play badminton. i think a lot.<br /><br />
+        <a href="/#thoughts" className="link-under link-fade">scroll down</a>
       </div>
 
       <div className="full-height" id="thoughts">

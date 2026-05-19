@@ -17,7 +17,7 @@ export default async function BlogPost({ params }) {
   return (
     <main>
       <NavBar navItems={navItems} />
-      <div className="m-6 mt-16">
+      <div className="m-6 mt-26">
         <h1>{frontmatter.title}</h1>
         <p>
           {new Date(frontmatter.date).toLocaleDateString("en-US", {

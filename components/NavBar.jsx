@@ -1,8 +1,10 @@
 import Link from "next/link";
+import Blur from "./Blur";
 
 export default function NavBar(props) {
   return (
     <nav>
+      <Blur height="135px" />
       {props.navItems.map(({ path, name, type }) => {
         switch (type) {
           case "link":
@@ -18,12 +20,6 @@ export default function NavBar(props) {
                 {name}
               </a>
             );
-
-          case "none":
-            return <p>{name}</p>;
-
-          default:
-            return null;
         }
       })}
     </nav>
