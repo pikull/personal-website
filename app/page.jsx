@@ -2,7 +2,6 @@ import NavBar from "components/NavBar";
 import Link from "next/link";
 
 import ThoughtsList from "components/ThoughtsList";
-import Contact from "components/Contact";
 
 const navItems = [
   { path: "/#home", name: "home", type: "anch" },
@@ -15,9 +14,14 @@ export default function Home() {
     <div>
       <NavBar navItems={navItems} />
       <div className="text-center full-height" id="home">
-        my name is akshun.<br />
-        i really like computers. i also play badminton. i think a lot.<br /><br />
-        <a href="/#thoughts" className="link-under link-fade">scroll down</a>
+        my name is akshun.
+        <br />
+        i really like computers. i also play badminton. i think a lot.
+        <br />
+        <br />
+        <a href="/#thoughts" className="link-under link-fade">
+          scroll down
+        </a>
       </div>
 
       <div className="full-height" id="thoughts">
@@ -28,7 +32,12 @@ export default function Home() {
         </Link>
       </div>
 
-      <Contact />
+      <div className="text-center full-height" id="contact">
+        contact me
+        <br />
+        <br />
+        akshun.chinara [at] gmail.com
+      </div>
     </div>
   );
 }
