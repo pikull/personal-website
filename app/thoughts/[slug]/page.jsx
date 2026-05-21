@@ -21,7 +21,7 @@ export default async function BlogPost({ params }) {
           day: "numeric",
         })}</p>
         <hr className="my-6" />
-        <div className="max-w-none" dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        <div className="max-w-none text-left" dangerouslySetInnerHTML={{ __html: htmlContent }} />
       </div>
     </main>
   );
